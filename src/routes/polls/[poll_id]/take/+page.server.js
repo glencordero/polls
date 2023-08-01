@@ -1,3 +1,5 @@
+import {polls} from "$lib/data/polls.js"
+
 export const load =  (serverLoadEvent) => {
     console.log('Load function called in page.server.js')
     // destructuring of fetch (function)
@@ -7,6 +9,9 @@ export const load =  (serverLoadEvent) => {
     console.log ( params ) 
     return {
         title,
-        poll_id: params.poll_id
+        // get poll id from params
+        // find poll from the poll id
+        poll: polls.find((poll) => poll.id == params.poll_id)
     }
 }
+
