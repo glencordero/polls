@@ -1,6 +1,8 @@
 <script>
     export let data
-    import Brief from "$lib/components/Brief.svelte"
+    const {poll} = data
+    import Question from "$lib/components/Question.svelte"
 </script>
 
-<Brief version={data.version} title={data.title}/>
+<Question question={poll.question}/>
+

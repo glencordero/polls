@@ -1,6 +1,8 @@
+import {polls} from "$lib/data/polls.js"
+
 export const load = (serverLoadEvent) => {
+    const { fetch, params } = serverLoadEvent
     return {
-        title: "Pollmaster",
-        version: "0.1"
+        poll: polls.find((poll) => poll.id == params.poll_id)
     }
 }

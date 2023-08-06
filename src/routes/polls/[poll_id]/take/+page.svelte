@@ -1,4 +1,5 @@
 <script>
+    import Question from '$lib/components/Question.svelte'
     export let data
     const {poll} = data
 </script>
@@ -7,9 +8,7 @@
     {data.title}
 </h1>
 
-<h2>
-    {poll.question}
-</h2>
+<Question question={poll.question}/>
 
 {#each poll.options as option, index}
 <input type="radio" name="choice" >
@@ -18,4 +17,6 @@
 
 <br>
 <button type=button>Submit</button>
+
+
   

@@ -55,15 +55,15 @@ export const polls = [
                 tally: 0
             },
             {
-                answer: "Karl Malone",
+                answer: "Karl Malone (You know what you did.)",
                 tally: 0
             },
             {
-                answer: "Liangelo Ball",
+                answer: "Cherokee Parks",
                 tally: 0
             },
             {
-                answer: "Bill Lambeer",
+                answer: "Greg Oden",
                 tally: 0
             }
         ] 
